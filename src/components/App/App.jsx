@@ -20,3 +20,8 @@ const App = () => {
 };
 
 export default App;
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
+import transactions from "./transactions.json";
+
+// ... всередині return в App ...
+<TransactionHistory items={transactions} />;
