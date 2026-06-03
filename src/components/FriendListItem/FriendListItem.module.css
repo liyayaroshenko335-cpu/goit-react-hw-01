@@ -38,14 +38,14 @@
 
 .item {
   display: flex;
-  flex-direction: column; /* Контент всередині картки - один під одним */
-  align-items: center;    /* Центруємо все всередині */
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
   padding: 15px;
-  width: 120px;           /* Фіксована ширина картки */
-  border: 2px solid #000; /* Чорна рамка, як на макеті */
-  border-radius: 8px;     /* Трохи заокруглені кути */
-  background-color: #fff; ширина для всіх карток */
+  width: 120px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  background-color: #fff;
 }
 
 .avatar {
@@ -58,17 +58,15 @@
   margin: 0;
 }
 
-/* Базовий стиль для статусу */
 .status {
   font-size: 16px;
   margin: 0;
 }
 
-/* Варіанти кольорів статусу */
 .isOnline {
-  color: #4caf50; /* Зелений */
+  color: #4caf50;
 }
 
 .isOffline {
-  color: #f44336; /* Червоний */
+  color: #f44336;
 }
