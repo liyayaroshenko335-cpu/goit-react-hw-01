@@ -1,38 +1,43 @@
 .transactionHistory {
   width: 100%;
-  max-width: 600px;
+  max-width: 800px; /* Трохи ширша, як на скриншоті */
   margin: 40px auto;
   border-collapse: collapse;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  border: 2px solid #2a2a2a; /* Темна зовнішня рамка */
 }
 
-.tableHeader {
-  background-color: #00bcd4;
-  color: white;
-  padding: 12px;
-  text-transform: uppercase;
-  font-size: 14px;
-  border: 1px solid #e0e0e0;
-}
-
-.tableData {
-  padding: 10px;
+/* Стилі для темної шапки */
+.transactionHistory thead th {
+  background-color: #2a2a2a; /* Дуже темний сірий/чорний */
+  color: #ffffff;
+  padding: 15px;
+  font-size: 18px;
   border: 1px solid #e0e0e0;
   text-align: center;
-  color: #5c5c5c;
-  text-transform: capitalize;
 }
 
-/* Ефект зебри */
-.tableRow:nth-child(even) {
-  background-color: #f2f2f2;
+/* Стилі для комірок */
+.transactionHistory td {
+  padding: 12px;
+  border: 1px solid #e0e0e0; /* Світлі рамки між комірками */
+  text-align: center;
+  color: #1f1f1f;
+  font-size: 16px;
 }
 
-.tableRow:nth-child(odd) {
+/* Ефект "зебри" */
+/* Непарні рядки (1, 3, 5...) - білі */
+.transactionHistory tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
 
-.tableRow:hover {
-  background-color: #e8f7f9;
+/* Парні рядки (2, 4, 6...) - світло-сірі */
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+/* Перша буква типу транзакції завжди велика */
+.transactionHistory td:first-child {
+  text-transform: capitalize;
 }
