@@ -1,9 +1,12 @@
 import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList";
 import userData from "../../userData.json";
+import friends from "../../friends.json";
+import css from "./App.module.css"; // Імпорт стилів
 
 const App = () => {
   return (
-    <>
+    <div className={css.container}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -11,7 +14,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-    </>
+      <FriendList friends={friends} />
+    </div>
   );
 };
 

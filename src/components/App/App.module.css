@@ -167,7 +167,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
@@ -181,4 +181,14 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Розташувати компоненти один під одним */
+  gap: 40px; /* Відступ між Profile та FriendList */
+  padding: 40px 20px; /* Відступи від країв екрана */
+  align-items: center; /* Центрування по горизонталі */
+  background-color: #f0f2f5; /* Легкий фон для всієї сторінки (за бажанням) */
+  min-height: 100vh;
 }
