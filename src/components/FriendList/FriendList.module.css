@@ -1,9 +1,9 @@
 .friendList {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-direction: row; /* Картки в ряд */
+  justify-content: center; /* Центруємо весь ряд */
+  gap: 16px; /* Відступ між картками */
+  padding: 20px;
   list-style: none;
-  padding: 0;
-  margin: 20px auto;
-  width: fit-content;
+  margin: 0;
 }
